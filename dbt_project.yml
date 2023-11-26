@@ -38,6 +38,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     example:
-      +database: check
       +schema: schem_a
     
