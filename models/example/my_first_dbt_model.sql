@@ -8,6 +8,7 @@
 */
 
 {{ config(materialized='table') }}
+{{ config(database="jaffle_shop") }}
 
 with source_data as (
 
