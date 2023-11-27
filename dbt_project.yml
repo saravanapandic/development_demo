@@ -42,7 +42,5 @@ models:
       customer_details:
         +schema: customer_details
         +materialized: table
-    packages:
-    - package: calogica/dbt_expectations
-      version: 0.10.1 
+  
     

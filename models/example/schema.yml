@@ -6,3 +6,7 @@ models: # or seeds:
     tests:
       - dbt_expectations.expect_table_column_count_to_equal_other_table:
           compare_model: ref("stage_check_customer")
+    columns:
+      - name: C_CUSTKEY
+        tests:
+          - not_null
