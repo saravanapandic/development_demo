@@ -6,7 +6,7 @@
 
     Try changing "table" to "view" below
 */
-{{ config(schema='schem_a') }}
+{{ config(schema='schem_aa') }}
 
 
 with source_data as (
