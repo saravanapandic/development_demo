@@ -1,0 +1,12 @@
+my_custom_db_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake 
+      host: br61084.central-india.azure
+      port: 443
+      user: SARAVANA
+      password: Saravanapandi@2327
+      database: HOUSEKEEPING
+      schema: ACTIVES_TABLE
+      threads: 4 # number of threads to use for dbt execution

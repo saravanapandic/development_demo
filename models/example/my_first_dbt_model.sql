@@ -6,8 +6,8 @@
 
     Try changing "table" to "view" below
 */
+{{ config(schema='schem_a') }}
 
-{{ config(materialized='table') }}
 
 with source_data as (
 
