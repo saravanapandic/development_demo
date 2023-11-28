@@ -2,11 +2,11 @@ my_custom_db_profile:
   target: dev
   outputs:
     dev:
-      type: your_database_type
-      host: your_host
-      port: your_port
-      user: your_username
-      password: your_password
-      database: custom_db_name
-      schema: custom_schema_name
+      type: snowflake 
+      host: br61084.central-india.azure
+      port: 443
+      user: SARAVANA
+      password: Saravanapandi@2327
+      database: HOUSEKEEPING
+      schema: ACTIVES_TABLE
       threads: 4 # number of threads to use for dbt execution

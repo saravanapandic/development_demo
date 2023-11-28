@@ -1,0 +1,25 @@
+my-snowflake-db:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: br61084.central-india.azure
+
+      # User/password auth
+      user: SARAVANA
+      password: Saravanapandi@2327
+
+      role: ACCOUNTADMIN
+      database: HOUSEKEEPING
+      warehouse: COMPUTE
+      schema: ACTIVES_TABLE
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: [anything]
+
+      # optional
+      connect_retries: 0 # default 0
+      connect_timeout: 10 # default: 10
+      retry_on_database_errors: False # default: false
+      retry_all: False  # default: false
+      reuse_connections: False # default: false (available v1.4+)
